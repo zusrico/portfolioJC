@@ -170,7 +170,7 @@ h2{
 }
 
 .encabezado_about_container{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,6 +407,27 @@ label{
 
 
 @media screen and (max-width: 768px){
+
+    .container_dos{
+        order: 0;
+    }
+
+    .about{
+        gap: 20px;
+    }
+
+    .about_item_container{
+        flex-direction: column;
+    }
+
+    .about_imagen{
+        width: 100%;
+        height: 50%;
+    }
+
+    .about_texto{
+        width: 100%;
+    }
 
     .tarjeta_trabajo{
         width: 100%;
