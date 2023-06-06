@@ -408,8 +408,8 @@ label{
 
 @media screen and (max-width: 768px){
 
-    .container_dos{
-        order: 0;
+    .about_item_container.container_dos{
+        flex-direction: column-reverse;
     }
 
     .about{
