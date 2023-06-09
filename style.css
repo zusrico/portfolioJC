@@ -40,7 +40,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     z-index: 0;
+}
+
+.icono_tope_pagina{
+    width: 100%;
+    transform: translateY(-90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar_container{
@@ -412,6 +421,14 @@ label{
         flex-direction: column-reverse;
     }
 
+    .iconitorojito{
+        display: none;
+    } 
+
+    .icono_tope_pagina{
+        transform: translateY(40px);
+    }
+    
     .about{
         gap: 20px;
     }
