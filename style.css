@@ -144,19 +144,49 @@ h2{
     margin-bottom: 50px;
 }
 
+.fotos_container{
+    width: 80%;
+    max-width: var(--maximoancho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 50px;
+}
+
+.fotos_container::-webkit-scrollbar{
+    width: 0;
+}
+
+.fotos_trabajo{
+    cursor: pointer;
+    border-radius: 2px;
+    width: 30px;
+    height: 200px;
+    flex: 2px;
+    transition: 0.4s ease-in-out;
+    background-color: purple;
+}
+
+.fotos_trabajo:hover{
+    flex: 3;
+}
+
 .tarjeta_trabajo{
     margin-bottom: 8px;
     cursor: pointer;
     display: block;
-    width: 32%;
     aspect-ratio: 1/1;
-    flex-wrap: wrap;
     background: rgba(119, 0, 255, 0.74);
 }
+
 
 .tarjeta_trabajo:hover{
     opacity: 0.5;
 }
+
 
 .about_container{
     width: 100%;
@@ -165,6 +195,7 @@ h2{
     align-items: center;
     margin-bottom: 50px;
 }
+
 
 .about{
     display: flex;
@@ -178,12 +209,14 @@ h2{
     border-bottom: 1px solid rgba(0, 0, 0, 0.144);
 }
 
+
 .encabezado_about_container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .about_item_container{
     background-color: whitesmoke;
@@ -194,6 +227,7 @@ h2{
     align-items: center;
     gap: 1px;
 }
+
 
 .about_imagen{
     height: 100%;
