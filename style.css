@@ -151,13 +151,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     gap: 2px;
-    overflow-x: scroll;
-    overflow-y: hidden;
     margin-bottom: 50px;
-}
-
-.fotos_container::-webkit-scrollbar{
-    width: 0;
 }
 
 .fotos_trabajo{
@@ -165,7 +159,7 @@ h2{
     border-radius: 2px;
     width: 30px;
     height: 200px;
-    flex: 2px;
+    flex: 1px;
     transition: 0.4s ease-in-out;
     background-color: purple;
 }
