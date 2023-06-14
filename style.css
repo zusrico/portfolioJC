@@ -269,6 +269,7 @@ h2{
 }
 
 .tarjeta_trabajo{
+    width: 32%;
     margin-bottom: 8px;
     cursor: pointer;
     display: block;
