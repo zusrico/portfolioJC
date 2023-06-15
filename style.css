@@ -159,26 +159,22 @@ h2{
     display: flex;
     width: 100%;
     height: 600px;
-    background-color: purple;
 }
 
 .primera_collage{
     width: 42.84%;
     height: 100%;
-    background-color: blue;
 }
 
 .cuacua{
     width: 100%;
     height: 66.66666667%;
-    background-color: red;
     display: flex;
 }
 
 .cuacuauno{
     width: 66.66666667%;
     height: 100%;
-    background-color: grey;
 }
 
 .fotos_container_collage img{
@@ -202,13 +198,11 @@ h2{
 .cuacuadosuno{
     width: 100%;
     height: 50%;
-    background-color: purple;
 }
 
 .cuacuadosdos{
     width: 100%;
     height: 50%;
-    background-color: red;
 }
 
 .cuecue{
@@ -220,25 +214,21 @@ h2{
 .cuecueuno{
     height: 100%;
     width: 33.3333%;
-    background-color: aqua;
 }
 
 .cuecuedos{
     height: 100%;
     width: 33.3333%;
-    background-color: yellow;
 }
 
 .cuecuetres{
     height: 100%;
     width: 33.3333%;
-    background-color: black;
 }
 
 .segunda_collage{
     width: 28.56%;
     height: 100%;
-    background-color: brown;
     display: flex;
     flex-direction: column;
 }
@@ -257,19 +247,16 @@ h2{
 .duedueuno{
     width: 50%;
     height: 100%;
-    background-color: blueviolet;
 }
 
 .dueduedos{
     width: 50%;
     height: 100%;
-    background-color: beige;
 }
 
 .tercera_collage{
     width: 28.56%;
     height: 100%;
-    background-color: aqua;
 }
 
 .fotos_trabajo{
@@ -279,7 +266,6 @@ h2{
     height: 200px;
     flex: 1px;
     transition: 0.4s ease-in-out;
-    background-color: purple;
 }
 
 .fotos_trabajo:hover{
@@ -566,6 +552,32 @@ label{
 }
 
 @media screen and (max-width: 768px){
+
+    .fotos_container_collage{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .primera_collage, .segunda_collage, .tercera_collage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 93%;
+    }
+
+    .cuacua, .cuacuauno, .cuacuados, .cuacuadosuno, .cuacuadosdos, .cuecue, .cuecueuno, .cuecuedos, .cuecuetres, .duadua, .duedue, .duedueuno, .dueduedos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
 
     .about_item_container.container_dos{
         flex-direction: column-reverse;
