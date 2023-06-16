@@ -282,6 +282,7 @@ h2{
 }
 
 .fotos_trabajo{
+    background-color: blueviolet;
     cursor: pointer;
     border-radius: 2px;
     width: 30px;
@@ -589,7 +590,7 @@ label{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 93%;
+        width: 100%;
     }
 
     .cuacua, .cuacuauno, .cuacuados, .cuacuadosuno, .cuacuadosdos, .cuecue, .cuecueuno, .cuecuedos, .cuecuetres, .duadua, .duedue, .duedueuno, .dueduedos{
