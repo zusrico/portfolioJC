@@ -135,13 +135,14 @@ h2{
 }
 
 .fotos_container{
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: var(--maximoancho);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
     flex-wrap: nowrap;
     gap: 8px;
     margin-bottom: 20px;
@@ -152,6 +153,7 @@ h2{
 }
 
 .fotos_trabajo{
+    position: relative;
     background-color: blueviolet;
     cursor: pointer;
     border-radius: 5px;
@@ -168,15 +170,15 @@ h2{
 
 .fotos_trabajo:hover{
     filter:contrast(105%);
+    transform: translateY(-30px);
 }
 
 .tarjetas_container{
     width: 80%;
     max-width: var(--maximoancho);
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    gap: 8px;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
@@ -325,11 +327,12 @@ h2{
 
 
 .tarjeta_trabajo{
-    width: 32.5%;
+    width: 32.3%;
     cursor: pointer;
     display: block;
     aspect-ratio: 1/1;
     background: rgba(119, 0, 255, 0.74);
+    margin: 1px;
 }
 
 
@@ -680,7 +683,6 @@ label{
     }
 
     .trabajos_container{
-        background-color: aqua;
         width: 100%;
     }
 
