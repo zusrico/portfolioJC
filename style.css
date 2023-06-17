@@ -110,9 +110,13 @@ h1 img{
 .presentacion_container{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    
+}
+
+.presentacion{
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 h2{
@@ -142,7 +146,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    overflow:scroll;
     flex-wrap: nowrap;
     gap: 8px;
     margin-bottom: 20px;
@@ -703,10 +707,57 @@ label{
 
 .logito:hover{
     animation: tiembla 0.1s infinite ease-in-out;
-  }
+}
 
-  @keyframes tiembla{
+.lista_rotatoria_container{
+    margin-left: 10px;
+}
+
+.item_rotador{
+    animation: roll 8s ease 1s infinite backwards;
+    position: absolute;
+}
+
+.item_rotador:nth-child(1){
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(2){
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(3){
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(4){
+    animation-delay: 6s;
+    opacity: 0;
+}
+
+
+@keyframes tiembla{
     0%  { -webkit-transform:rotateZ(-1deg); }
     50% { -webkit-transform:rotateZ( 0deg); }
     100%{ -webkit-transform:rotateZ( 1deg); }
-  }
+}
+
+@keyframes roll{
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -70%, 0);
+    }
+
+    2.5%, 25% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+    27.5%, 100% {
+        opacity: 0;
+        transform: translate3d(0, 70%, 0);
+    }
+}
