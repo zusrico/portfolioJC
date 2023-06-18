@@ -345,13 +345,45 @@ h2{
     cursor: pointer;
     display: block;
     aspect-ratio: 1/1;
+    opacity: 0;
     background: rgba(119, 0, 255, 0.74);
     margin: 1px;
+    animation: aparece_foto 5s forwards;
+}
+
+.tarjeta_trabajo:nth-child(1){
+    background: red;
+    animation-delay: 1s;
+}
+.tarjeta_trabajo:nth-child(2){
+    background: purple;
+    animation-delay: 2s;
+}.tarjeta_trabajo:nth-child(3){
+    background: yellow;
+    animation-delay: 3s;
+}.tarjeta_trabajo:nth-child(6){
+    background: blue;
+    animation-delay: 4s;
+}.tarjeta_trabajo:nth-child(5){
+    background: pink;
+    animation-delay: 9s;
+}.tarjeta_trabajo:nth-child(4){
+    background: brown;
+    animation-delay: 8s;
+}.tarjeta_trabajo:nth-child(9){
+    background: aqua;
+    animation-delay: 5s;
+}.tarjeta_trabajo:nth-child(8){
+    background: orange ;
+    animation-delay: 6s;
+}.tarjeta_trabajo:nth-child(7){
+    background: green;
+    animation-delay: 7s;
 }
 
 
 .tarjeta_trabajo:hover{
-    opacity: 0.5;
+    opacity: 0;
 }
 
 
@@ -617,6 +649,45 @@ label{
     display: none;
 }
 
+.logito:hover{
+    animation: tiembla 0.1s infinite ease-in-out;
+}
+
+.lista_rotatoria_container{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    transform: translateX(-110px) translateY(-25px);
+    margin-left: 10px;
+}
+
+.item_rotador{
+    animation: roll 8s ease 1s infinite;
+    position: absolute;
+}
+
+.item_rotador:nth-child(1){
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(2){
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(3){
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.item_rotador:nth-child(4){
+    animation-delay: 6s;
+    opacity: 0;
+}
+
+
 @media screen and (max-width: 768px){
 
     .fotos_container_collage{
@@ -640,7 +711,7 @@ label{
         width: 100%;
     }
 
-    .cuacua, .cuacuauno, .cuacuados, .cuacuadosuno, .cuacuadosdos, .cuecue, .cuecueuno, .cuecuedos, .cuecuetres, .duadua, .duedue, .duedueuno, .dueduedos{
+    .cuacua, .cuacuauno, .cuacuados, .cuacuadosuno, .cuacuadosdos, .cuecue, .cuecueuno, .cuecuedos, .cuecuetres, .duadua, .duedue, .duedueuno, .dueduedos, .segundo_cuacua{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -717,44 +788,6 @@ label{
     }
 }
 
-.logito:hover{
-    animation: tiembla 0.1s infinite ease-in-out;
-}
-
-.lista_rotatoria_container{
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: purple;
-    transform: translateX(-110px) translateY(-25px);
-    margin-left: 10px;
-}
-
-.item_rotador{
-    animation: roll 8s ease 1s infinite;
-    position: absolute;
-}
-
-.item_rotador:nth-child(1){
-    animation-delay: 0s;
-    opacity: 0;
-}
-
-.item_rotador:nth-child(2){
-    animation-delay: 2s;
-    opacity: 0;
-}
-
-.item_rotador:nth-child(3){
-    animation-delay: 4s;
-    opacity: 0;
-}
-
-.item_rotador:nth-child(4){
-    animation-delay: 6s;
-    opacity: 0;
-}
-
 
 @keyframes tiembla{
     0%  { -webkit-transform:rotateZ(-1deg); }
@@ -779,12 +812,18 @@ label{
     }
 }
 
-@keyframes showUp{
-    0% {
+@keyframes aparece_foto{
+    0%{
         opacity: 0;
+    }
+    
+    20%{
+        opacity: 1;
+        transform: translate3d(0, 10%, 0);
     }
 
     100%{
         opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
