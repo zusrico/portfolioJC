@@ -1,5 +1,5 @@
 :root{
-    --maximoancho: 1400px;
+    --maximoancho: 1000px;
     lighting-color: antiquewhite;
 }
 @font-face {
@@ -337,7 +337,6 @@ h2{
     width: 28.56%;
     height: 100%;
 }
-
 
 
 .tarjeta_trabajo{
@@ -819,7 +818,7 @@ label{
     
     20%{
         opacity: 1;
-        transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 5%, 0);
     }
 
     100%{
