@@ -67,7 +67,7 @@ header {
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -148,9 +148,10 @@ h2{
 }
 
 .fotos_container{
+
     position: relative;
     z-index: 1;
-    width: 100%;
+    min-width: 100%;
     max-width: var(--maximoancho);
     display: flex;
     justify-content: space-between;
@@ -413,6 +414,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .about_item_container{
