@@ -348,37 +348,37 @@ h2{
     opacity: 0;
     background: rgba(119, 0, 255, 0.74);
     margin: 1px;
-    animation: aparece_foto 5s forwards;
+    animation: aparece_foto 2s forwards;
 }
 
 .tarjeta_trabajo:nth-child(1){
     background: red;
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
 .tarjeta_trabajo:nth-child(2){
     background: purple;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
 }.tarjeta_trabajo:nth-child(3){
     background: yellow;
-    animation-delay: 3s;
+    animation-delay: 1s;
 }.tarjeta_trabajo:nth-child(6){
     background: blue;
-    animation-delay: 4s;
+    animation-delay: 1.5s;
 }.tarjeta_trabajo:nth-child(5){
     background: pink;
-    animation-delay: 9s;
+    animation-delay: 4s;
 }.tarjeta_trabajo:nth-child(4){
     background: brown;
-    animation-delay: 8s;
+    animation-delay: 3.5s;
 }.tarjeta_trabajo:nth-child(9){
     background: aqua;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }.tarjeta_trabajo:nth-child(8){
     background: orange ;
-    animation-delay: 6s;
+    animation-delay: 2.5s;
 }.tarjeta_trabajo:nth-child(7){
     background: green;
-    animation-delay: 7s;
+    animation-delay: 3s;
 }
 
 
