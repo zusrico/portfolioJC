@@ -73,7 +73,6 @@ header {
 }
 
 .navbar ul{
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,9 +82,13 @@ header {
     font-weight:light;
 }
 
-ul li{
+.navbar ul li{
     cursor: pointer;
     display: block;
+}
+
+.navbar ul li a{
+    width: 100%;
 }
 
 ul li:hover{
@@ -348,36 +351,29 @@ h2{
     opacity: 0;
     background: rgba(119, 0, 255, 0.74);
     margin: 1px;
+    background-size: cover;
+    background-position: center;
     animation: aparece_foto 2s forwards;
 }
 
 .tarjeta_trabajo:nth-child(1){
-    background: red;
     animation-delay: 0s;
 }
 .tarjeta_trabajo:nth-child(2){
-    background: purple;
     animation-delay: 0.5s;
 }.tarjeta_trabajo:nth-child(3){
-    background: yellow;
     animation-delay: 1s;
 }.tarjeta_trabajo:nth-child(6){
-    background: blue;
     animation-delay: 1.5s;
 }.tarjeta_trabajo:nth-child(5){
-    background: pink;
     animation-delay: 4s;
 }.tarjeta_trabajo:nth-child(4){
-    background: brown;
     animation-delay: 3.5s;
 }.tarjeta_trabajo:nth-child(9){
-    background: aqua;
     animation-delay: 2s;
 }.tarjeta_trabajo:nth-child(8){
-    background: orange ;
     animation-delay: 2.5s;
 }.tarjeta_trabajo:nth-child(7){
-    background: green;
     animation-delay: 3s;
 }
 
@@ -760,6 +756,9 @@ label{
     .about_imagen{
         width: 100%;
         height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about_texto{
