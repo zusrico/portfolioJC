@@ -82,14 +82,7 @@ header {
     font-weight:light;
 }
 
-.navbar ul li{
-    cursor: pointer;
-    display: block;
-}
 
-.navbar ul li a{
-    width: 100%;
-}
 
 ul li:hover{
     text-decoration: underline;
@@ -716,16 +709,16 @@ label{
         width: 100%;
     }
 
-    
-
-
     .about_item_container.container_dos{
         flex-direction: column-reverse;
     }
 
     .iconitorojito{
         display: none;
+        background-color: aqua;
     } 
+
+    
 
     .icono_tope_pagina{
         transform: translateY(40px) scale(0.85);
