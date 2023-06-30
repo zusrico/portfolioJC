@@ -7,6 +7,18 @@
     src: url('./Athenian.ttf') format('truetype');
 }
 
+
+.info_fotos{
+    display: flex;
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(26, 5, 5, 0.466);
+    text-decoration: underline;
+    z-index: 0;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -81,7 +93,6 @@ header {
     font-size: 15px;
     font-weight:light;
 }
-
 
 
 ul li:hover{
@@ -240,6 +251,7 @@ h2{
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
+    filter: blur(0px);
 }
 
 
@@ -415,6 +427,26 @@ h2{
     align-items: center;
     gap: 1px;
 }
+
+.about_item_container_marca{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.about_texto_marca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+}
+
+
 
 .about_imagen{
     height: 100%;
