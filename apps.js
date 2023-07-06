@@ -38,6 +38,29 @@ for (let j = 0; j<tarjeta_diseno.length; j++){
 
 var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
 
-function expandeLinea(){
-  
+var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
+
+
+for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
+  tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "underline";
+    titulo.style.textDecorationColor = "red";
+    titulo.style.transition = "0.1s";
+  })
+
+  tarjeta_diseno_proyecto[t].addEventListener("mouseleave", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "none";
+    titulo.style.transition = "0.1s";
+  })
 }
+
+
+  elementosPadre[i].addEventListener("mouseleave", function(event) {
+    var titulo = this.getElementsByClassName("titulo")[0]; // Obtener el título del elemento actual
+    titulo.style.textDecoration = ""; // Eliminar el estilo del título
+  });
+
+  
+
