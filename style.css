@@ -801,8 +801,28 @@ label{
     height: 50%;
 }
 
+.titulo_index{
+    display: block; 
+    width: 500px; 
+    text-align: start; 
+    transform: translateX(-105px);
+}
 
 @media screen and (max-width: 768px){
+
+    .puntito{
+        display: none;
+    }
+
+    .titulo_index{
+        text-align: center;
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    .lista_rotatoria_container{
+        display: none;
+    }
 
     .fotos_container_collage{
         display: flex;
