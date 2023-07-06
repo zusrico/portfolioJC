@@ -810,6 +810,14 @@ label{
 
 @media screen and (max-width: 768px){
 
+    .diseno_articulo{
+        min-width: 390px;
+    }
+
+    .diseno_articulo_doble{
+        min-width: 390px;
+    }
+
     .puntito{
         display: none;
     }
