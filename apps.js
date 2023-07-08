@@ -6,22 +6,7 @@ var tarjeta_texto = document.getElementById("fotito");
 var tarjeta_trabajo_diseno = document.getElementsByClassName("tarjeta_trabajo_diseno");
 var tarjeta_diseno = document.getElementsByClassName("tarjeta_diseno");
 
-
-
-  function efectoBlur(){
-    tarjeta_texto.style.zIndex = "10";
-  }
-
-  function quitarBlur(){
-    tarjeta_texto.style.zIndex = "0";
-  }
-
-for (let i = 0; i< imagen_primera.length; i++){
-  imagen_primera[i].addEventListener("mouseenter", efectoBlur);
-  imagen_primera[i].addEventListener("mouseleave", quitarBlur);
-}
     
-
 function infoDisenoAparece(){
     tarjeta_diseno[j].style.display = "flex";
 }
@@ -61,6 +46,37 @@ for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
     var titulo = this.getElementsByClassName("titulo")[0]; // Obtener el título del elemento actual
     titulo.style.textDecoration = ""; // Eliminar el estilo del título
   });
+
+
+var boton_menu = document.getElementById("boton_navbarito");
+var menu_desplegable = document.getElementById("navbar_mobilito");
+var titulo = document.getElementById("titulazo");
+
+var checkin = false;
+
+function despliegaMenu(){
+  if(!checkin){
+    menu_desplegable.style.display = "flex";
+  }
+  checkin = !checkin;
+}
+
+function escondeMenu(){
+  if(!checkin){
+    menu_desplegable.style.display = "none";
+  }
+}
+
+
+function tituloRojo(){
+  titulo.style.backgroundColor = "red";
+}
+
+
+boton_menu.addEventListener("click", tituloRojo);
+
+boton_menu.addEventListener("click", despliegaMenu);
+boton_menu.addEventListener("mouseleave", escondeMenu);
 
   
 
