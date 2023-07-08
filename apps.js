@@ -6,14 +6,6 @@ var tarjeta_texto = document.getElementById("fotito");
 var tarjeta_trabajo_diseno = document.getElementsByClassName("tarjeta_trabajo_diseno");
 var tarjeta_diseno = document.getElementsByClassName("tarjeta_diseno");
 
-    
-function infoDisenoAparece(){
-    tarjeta_diseno[j].style.display = "flex";
-}
-
-function infoDisenoDesaparece(){
-    tarjeta_diseno[j].style.display = "none";
-}
 
 for (let j = 0; j<tarjeta_diseno.length; j++){
   tarjeta_trabajo_diseno[j].addEventListener("mouseenter", infoDisenoAparece);
@@ -41,42 +33,23 @@ for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
   })
 }
 
+var boton = document.getElementById("boton_navbar");
+var menusito = document.getElementById("navbar_mobilito"); 
+var seccion = document.getElementById("seccion");
+var checkin = document.getElementById("check");
 
-  elementosPadre[i].addEventListener("mouseleave", function(event) {
-    var titulo = this.getElementsByClassName("titulo")[0]; // Obtener el título del elemento actual
-    titulo.style.textDecoration = ""; // Eliminar el estilo del título
-  });
 
 
-var boton_menu = document.getElementById("boton_navbarito");
-var menu_desplegable = document.getElementById("navbar_mobilito");
-var titulo = document.getElementById("titulazo");
-
-var checkin = false;
-
-function despliegaMenu(){
-  if(!checkin){
-    menu_desplegable.style.display = "flex";
-  }
-  checkin = !checkin;
+function desplegaMenu(){
+    menusito.style.display = "flex";
 }
 
 function escondeMenu(){
-  if(!checkin){
-    menu_desplegable.style.display = "none";
-  }
+    if(checkin.checked == true)
+    menusito.style.display = "none";
 }
 
-
-function tituloRojo(){
-  titulo.style.backgroundColor = "red";
-}
-
-
-boton_menu.addEventListener("click", tituloRojo);
-
-boton_menu.addEventListener("click", despliegaMenu);
-boton_menu.addEventListener("mouseleave", escondeMenu);
-
+boton.addEventListener("click", desplegaMenu);
+boton.addEventListener("click", escondeMenu);
   
 

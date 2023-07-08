@@ -34,13 +34,40 @@
                 </ul>
             </div>
         </div> 
-        <div></div>
+        
+        <div class="barra_menu_container" style="position: absolute;">
+            <div class="barra_menu">
+                <div class="nav_boton_container" id="boton_navbar">
+                    <label for="check">
+                        <input type="checkbox" name="botonPulsado" id="check">
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                    </label>
+                </div>
+                <div>
+                    <img class="logito" style="width: 50px;" src="./images/Captura de pantalla 2023-06-01 194144.png">
+                </div>
+            </div>
+        </div>
     </header>
     <main>
+        <div class="navbar_mobile_container" id="navbar_mobilito">
+            <div class="navbar_mobile">
+                <ul class="navbar_mobile_menu">
+                    <li><a class="active" href="./index.html">inicio</a></li>
+                    <li><a href="./diseno.html">diseño</a></li>
+                    <li><a href="./brand.html">marca</a></li>
+                    <li><a href="./photo.html">foto</a></li>
+                    <li><a href="./about.html">sobre mí</a></li>
+                    <li><a href="./contact.html">contacto</a></li>
+                </ul>
+            </div>
+        </div>
         <section>
             <div class="diseno_container">
-                <div style="display: flex; align-items: center; justify-content: center;">   
-                    <h2>José Carlos García - <span class="underline_proyecto_diseno">diseñador gráfico</span></h2>
+                <div id="recuadro" style="cursor: pointer; display: flex; align-items: center; justify-content: center;">   
+                    <h2 id="titulazo">José Carlos García - <span class="underline_proyecto_diseno">diseñador gráfico</span></h2>
                 </div>
                 <article class="diseno_diseno">
                     <div class="diseno_articulo_container">
@@ -109,7 +136,7 @@
                                         <input required type="text" id="nombre" name="name" required style="width: 100%;">
                                     </div>
                                     <div style="width: 50%;">
-                                        <label for="nombre">Apellidos</label>
+                                        <label for="nombre">Apellidos<span style="color: red;">*</span></label>
                                         <input type="text" id="nombre" name="name" style="width: 100%;">
                                     </div>
                                 </div>

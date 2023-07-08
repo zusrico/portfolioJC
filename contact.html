@@ -21,7 +21,7 @@
                 <a href="./index.html"><img class="logito" style="width: 80px;" src="./images/Captura de pantalla 2023-06-01 194144.png"></a>    
             </div>
         </div>
-        <div class="navbar_container">
+        <div class="navbar_container" id="barra_navegacion">
             <div class="navbar">
                 <ul>
                     <li><a href="./index.html">inicio</a></li>
@@ -34,8 +34,38 @@
                 </ul>
             </div>
         </div> 
+
+        
+        <div class="barra_menu_container" style="position: absolute;">
+            <div class="barra_menu">
+                <div class="nav_boton_container" id="boton_navbar">
+                    <label for="check">
+                        <input type="checkbox" name="botonPulsado" id="check">
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                    </label>
+                </div>
+                <div>
+                    <img class="logito" style="width: 50px;" src="./images/Captura de pantalla 2023-06-01 194144.png">
+                </div>
+            </div>
+        </div>
     </header>
     <main>
+        <div class="navbar_mobile_container" id="navbar_mobilito">
+            <div class="navbar_mobile">
+                <ul class="navbar_mobile_menu">
+                    <li><a class="active" href="./index.html">inicio</a></li>
+                    <li><a href="./diseno.html">diseño</a></li>
+                    <li><a href="./brand.html">marca</a></li>
+                    <li><a href="./photo.html">foto</a></li>
+                    <li><a href="./about.html">sobre mí</a></li>
+                    <li><a href="./contact.html">contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="contacto_container"> 
             <div class="contacto_contacto">
                 <div class="contacto_columna main_contacto">
@@ -50,7 +80,7 @@
                                         <input required type="text" id="nombre" name="name" required style="width: 100%;">
                                     </div>
                                     <div style="width: 50%;">
-                                        <label for="nombre">Apellidos</label>
+                                        <label for="nombre">Apellidos<span style="color: red;">*</span></label>
                                         <input type="text" id="nombre" name="name" style="width: 100%;">
                                     </div>
                                 </div>
@@ -100,5 +130,6 @@
             </div>
         </div>
     </footer>
+    <script src="./apps.js"></script>
 </body>
 </html>

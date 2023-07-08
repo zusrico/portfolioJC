@@ -36,12 +36,15 @@
             </div>
         </div> 
         
-        <div class="barra_menu_container">
+        <div class="barra_menu_container" style="position: absolute;">
             <div class="barra_menu">
-                <div class="nav_boton_container" id="boton_navbarito">
-                    <span class="palito_boton"></span>
-                    <span class="palito_boton"></span>
-                    <span class="palito_boton"></span>
+                <div class="nav_boton_container" id="boton_navbar">
+                    <label for="check">
+                        <input type="checkbox" name="botonPulsado" id="check">
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                        <span class="palito_boton"></span>
+                    </label>
                 </div>
                 <div>
                     <img class="logito" style="width: 50px;" src="./images/Captura de pantalla 2023-06-01 194144.png">
@@ -53,7 +56,7 @@
         <div class="navbar_mobile_container" id="navbar_mobilito">
             <div class="navbar_mobile">
                 <ul class="navbar_mobile_menu">
-                    <li><a href="./index.html">inicio</a></li>
+                    <li><a class="active" href="./index.html">inicio</a></li>
                     <li><a href="./diseno.html">diseño</a></li>
                     <li><a href="./brand.html">marca</a></li>
                     <li><a href="./photo.html">foto</a></li>
@@ -62,7 +65,7 @@
                 </ul>
             </div>
         </div>
-        <section>
+        <section id="seccion">
             <div class="trabajos_container">
                 <div class="trabajos_container">
                     <div class="presentacion_container"> 
@@ -120,11 +123,11 @@
                                 <div class="nombre_apell">
                                     <div style="width: 50%;">
                                         <label for="nombre">Nombre<span style="color: red;">*</span></label>
-                                        <input required type="text" id="nombre" name="name" required style="width: 100%;">
+                                        <input required type="text" id="nombre" name="name" style="width: 100%;">
                                     </div>
                                     <div style="width: 50%;">
-                                        <label for="nombre">Apellidos</label>
-                                        <input type="text" id="nombre" name="name" style="width: 100%;">
+                                        <label for="nombre">Apellidos<span style="color: red;">*</span></label>
+                                        <input required type="text" id="nombre" name="name" style="width: 100%;">
                                     </div>
                                 </div>
                             </fieldset>
@@ -195,6 +198,24 @@
             </div>
         </div>
     </footer>
-    <script src="./apps.js"></script>
+    <script>
+        var boton = document.getElementById("boton_navbar");
+        var menusito = document.getElementById("navbar_mobilito"); 
+        var checkin = document.getElementById("check");
+        
+
+        function desplegaMenu(){
+            menusito.style.display = "flex";
+        }
+
+        function escondeMenu(){
+            if(checkin.checked == true)
+            menusito.style.display = "none";
+        }
+
+        boton.addEventListener("click", desplegaMenu);
+        boton.addEventListener("click", escondeMenu);
+
+    </script>
 </body>
 </html>
