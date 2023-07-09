@@ -37,7 +37,7 @@ var boton = document.getElementById("boton_navbar");
 var menusito = document.getElementById("navbar_mobilito"); 
 var seccion = document.getElementById("seccion");
 var checkin = document.getElementById("check");
-
+checkin.checked = true;
 
 
 function desplegaMenu(){
