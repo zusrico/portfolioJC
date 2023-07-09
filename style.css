@@ -936,6 +936,10 @@ label{
         max-width: 80%;
     }
 
+    .puntito{
+        display: none;
+    }
+
     .barra_menu_container{
         display: block;
     }    
