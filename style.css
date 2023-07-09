@@ -172,6 +172,7 @@ input[type="checkbox"]{
 }
 
 .navbar_mobile_menu li a{
+    transform: translateY(20%);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
@@ -185,9 +186,11 @@ input[type="checkbox"]{
 
 .active {
     background-color: black;
-    color: white !important;
 }
 
+.active a{
+    color: white !important;
+}
 
 .navbar ul{
     display: flex;
@@ -928,6 +931,11 @@ label{
 }
 
 @media screen and (max-width: 780px){
+
+    .diseno_articulo_container{
+        display: flex;
+        flex-direction: column;
+    }
 
     h2{
         max-width: 80%;
