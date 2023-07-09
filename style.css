@@ -16,12 +16,21 @@
 
 
 a, a:link, a:visited{
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: rgba(0, 0, 0, 0.575);
     text-decoration: none;
 }
 
 a:active{
     color: black;
+}
+
+.current{
+    color: black !important; 
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-decoration-color: red !important;
 }
 
 
