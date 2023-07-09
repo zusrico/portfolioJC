@@ -932,6 +932,10 @@ label{
 
 @media screen and (max-width: 780px){
 
+    h2{
+        max-width: 80%;
+    }
+
     .barra_menu_container{
         display: block;
     }    
