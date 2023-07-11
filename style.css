@@ -852,7 +852,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
 }
 
 
@@ -942,9 +942,22 @@ label{
 
 @media screen and (max-width: 780px){
 
+
+
+    .diseno_diseno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .diseno_articulo_container{
         display: flex;
         flex-direction: column;
+        justify-content:center;
+        width: 100%;
+        align-items:flex-start;
     }
 
     h2{
@@ -972,11 +985,21 @@ label{
     }
 
     .diseno_articulo{
-        min-width: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .diseno_articulo img{
+        width: 100%;
     }
 
     .diseno_articulo_doble{
-        min-width: 390px;
+        min-width: 300px;
     }
 
     .navbar_mobile_container{
@@ -1081,6 +1104,11 @@ label{
     }
 
     .trabajos_container{
+        width: 100%;
+    }
+
+    .trabajos_container h2{
+        font-size: 60px !important;
         width: 100%;
     }
 
