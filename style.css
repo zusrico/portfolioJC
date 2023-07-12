@@ -113,11 +113,13 @@ header {
     background-color: purple;
 }
 
-label{
+.nav_boton_container label{
     display: flex;
+    flex-direction: column;
     width: 100%;
     cursor: pointer;
 }
+
 
 input[type="checkbox"]{
     display: none;
@@ -939,6 +941,14 @@ label{
     transform: translateX(-105px);
 }
 
+.logo_jartible_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 780px){
 
 
@@ -1124,6 +1134,32 @@ label{
     .contacto_columna{
         width: 100%;
     }
+
+    .tarjeta_trabajo:nth-child(1){
+        animation-delay: 0s;
+    }
+    .tarjeta_trabajo:nth-child(2){
+        animation-delay: 0.75s;
+    }.tarjeta_trabajo:nth-child(3){
+        animation-delay: 1.5s;
+    }.tarjeta_trabajo:nth-child(4){
+        animation-delay: 2.25s;
+    }.tarjeta_trabajo:nth-child(9){
+        animation-delay: 6s;
+    }.tarjeta_trabajo:nth-child(8){
+        animation-delay: 5.25s;
+    }.tarjeta_trabajo:nth-child(5){
+        animation-delay: 3.0s;
+    }.tarjeta_trabajo:nth-child(6){
+        animation-delay: 3.75s;
+    }.tarjeta_trabajo:nth-child(7){
+        animation-delay: 4.5s;
+    }
+
+    .logo_jartible_container img{
+        width: 80% !important;
+    }
+    
 }
 
 
