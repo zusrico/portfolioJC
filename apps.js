@@ -51,5 +51,54 @@ function escondeMenu(){
 
 boton.addEventListener("click", desplegaMenu);
 boton.addEventListener("click", escondeMenu);
+
+
+
+var botoncito = document.getElementById("botoncitoguapo");
+var botoncito_dos = document.getElementById("botoncitoguapo_dos");
+var contenedor_tarjetas_diseno = document.getElementById("diseno_articulo_contenedor");
+
+function oscurecer(){
+  botoncito.style.opacity = "0.75";
+}
+
+function apareceBoton(){
+  
+  botoncito.style.border = "none";
+  botoncito.style.backgroundColor = "grey";
+  botoncito.style.opacity = "0.45";
+  botoncito.style.boxShadow = "1px 1px 10px grey";
+  
+  botoncito_dos.style.border = "none";
+  botoncito_dos.style.backgroundColor = "grey";
+  botoncito_dos.style.opacity = "0.45";
+  botoncito_dos.style.boxShadow = "1px 1px 10px grey";
+}
+
+function desapareceBoton(){
+  botoncito.style.opacity = "0";
+  botoncito_dos.style.opacity = "0";
+}
+
+function desplazaPago(){
+  botoncito.style.opacity = "0.45";
+  contenedor_tarjetas_diseno.scrollLeft -= 350;
+}
+
+function desplazaPagoDos(){
+  contenedor_tarjetas_diseno.scrollLeft += 350;
+}
+
+botoncito.addEventListener("click", desplazaPago);
+botoncito_dos.addEventListener("click", desplazaPagoDos);
+
+contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
+contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
+
+
+contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
+contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
+
+botoncito.addEventListener("mouseover", oscurecer);
   
 
