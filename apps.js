@@ -65,13 +65,13 @@ function oscurecer(){
 function apareceBoton(){
   
   botoncito.style.border = "none";
-  botoncito.style.backgroundColor = "grey";
-  botoncito.style.opacity = "0.45";
+  botoncito.style.backgroundColor = "white";
+  botoncito.style.opacity = "0.85";
   botoncito.style.boxShadow = "1px 1px 10px grey";
   
   botoncito_dos.style.border = "none";
-  botoncito_dos.style.backgroundColor = "grey";
-  botoncito_dos.style.opacity = "0.45";
+  botoncito_dos.style.backgroundColor = "white";
+  botoncito_dos.style.opacity = "0.85";
   botoncito_dos.style.boxShadow = "1px 1px 10px grey";
 }
 
@@ -81,13 +81,15 @@ function desapareceBoton(){
 }
 
 function desplazaPago(){
-  botoncito.style.opacity = "0.45";
-  contenedor_tarjetas_diseno.scrollLeft -= 350;
+  contenedor_tarjetas_diseno.scrollLeft -= 530;
 }
 
 function desplazaPagoDos(){
-  contenedor_tarjetas_diseno.scrollLeft += 350;
+  contenedor_tarjetas_diseno.scrollLeft += 530;
 }
+
+var tarjetota = document.getElementsByClassName("diseno_articulo");
+
 
 botoncito.addEventListener("click", desplazaPago);
 botoncito_dos.addEventListener("click", desplazaPagoDos);
@@ -100,5 +102,6 @@ contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
 contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
 
 botoncito.addEventListener("mouseover", oscurecer);
+
   
 

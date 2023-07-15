@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <title>aboutUS</title>
 </head>
 <body>
@@ -78,12 +80,24 @@
                         <img src="./images/Captura de pantalla 2023-06-01 184923.png">
                     </div>
                     <div class="about_texto">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, rem, inventore totam laudantium repellat asperiores eveniet magnam vero blanditiis eligendi et molestiae aspernatur velit hic quo cumque aut saepe repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia quod harum ab debitis eligendi nam ad et quaerat fugit suscipit consectetur, amet ipsum soluta sequi inventore? Consectetur, enim necessitatibus.</p>
+                        <h3><strong>Educación</strong></h3>
+                        <ul>
+                            <li><span class="anios_cv">2023</span> Grado Publicidad y Relaciones Públicas</li>
+                            <li><span class="anios_cv">2019</span> Grado Superior blablabla</li>
+                            <li><span class="anios_cv">2017</span> Grado Medio blabla</li>
+                            <li><span class="anios_cv">2016</span> Grado Medio blabla</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="about_item_container container_dos" style="background-color: white;">
                     <div class="about_texto">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae soluta architecto nisi adipisci numquam consectetur quo consequuntur labore, accusantium perferendis molestias. Consequatur sint aliquam iusto amet accusantium, eos dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus, illo quibusdam magni numquam quaerat odit facilis provident temporibus dignissimos esse veritatis odio, doloribus aut eaque obcaecati eveniet voluptatibus laboriosam.</p>
+                        <h3>Experiencia Laboral <strong>Diseño Gráfico</strong></h3>
+                        <ul>
+                            <li><span class="anios_cv">2019-Act.</span> Empresa de mickey mouse</li>
+                            <li><span class="anios_cv">2020-Act.</span> Fundador y diseñador de Jartible&copy;</li>
+                            <li><span class="anios_cv">2018-2019</span> Costa Noroeste</li>
+                            <li><span class="anios_cv">2016-Act.</span> Diseñador freelance</li>
+                        </ul>
                     </div>
                     <div class="about_imagen imagen_dos">
                         <img src="./images/Captura de pantalla 2023-06-01 184156.png">
@@ -94,12 +108,25 @@
                         <img src="./images/Captura de pantalla 2023-06-01 184107.png">
                     </div>
                     <div class="about_texto">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae soluta architecto nisi adipisci numquam consectetur quo consequuntur labore, accusantium perferendis molestias. Consequatur sint aliquam iusto amet accusantium, eos dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus, illo quibusdam magni numquam quaerat odit facilis provident temporibus dignissimos esse veritatis odio, doloribus aut eaque obcaecati eveniet voluptatibus laboriosam.</p>
+                        <h3>Experiencia Laboral <strong>Fotografía</strong></h3>
+                        <ul>
+                            <li>Costa Noroeste - 6 meses(2023)</li>
+                            <li>La empresa del nota ese que no paga - 3 años</li>
+                            <li>Grado Medio blabla</li>
+                            <li>Grado Medio blabla</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="about_item_container container_dos" style="background-color: white;">
                     <div class="about_texto">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae soluta architecto nisi adipisci numquam consectetur quo consequuntur labore, accusantium perferendis molestias. Consequatur sint aliquam iusto amet accusantium, eos dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus, illo quibusdam magni numquam quaerat odit facilis provident temporibus dignissimos esse veritatis odio, doloribus aut eaque obcaecati eveniet voluptatibus laboriosam.</p>
+                        <button type="button" class="boton_descargaCV">Descargar <span class="material-symbols-outlined">
+                            download
+                            </span> 
+                            <svg class="circulo_boton" id="circulito" xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="transform: translateY(200px);">
+                                    <circle cx="100" cy="100" r="100" fill="red" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="about_imagen imagen_dos">
                         <img src="./images/fotosJartible/disenos_planos/3 EYES CAT.png">
@@ -125,7 +152,75 @@
             </div>
         </div>
     </footer>
-    <script src="./apps.js">
+    <script>
+        
+
+var imagen_primera = document.getElementsByClassName("lazyto");
+var tarjeta_texto = document.getElementById("fotito");
+
+var tarjeta_trabajo_diseno = document.getElementsByClassName("tarjeta_trabajo_diseno");
+var tarjeta_diseno = document.getElementsByClassName("tarjeta_diseno");
+
+
+for (let j = 0; j<tarjeta_diseno.length; j++){
+  tarjeta_trabajo_diseno[j].addEventListener("mouseenter", infoDisenoAparece);
+  tarjeta_trabajo_diseno[j].addEventListener("mouseleave", infoDisenoDesaparece);
+}
+
+
+var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
+
+var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
+
+
+for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
+  tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "underline";
+    titulo.style.textDecorationColor = "red";
+    titulo.style.transition = "0.1s";
+  })
+
+  tarjeta_diseno_proyecto[t].addEventListener("mouseleave", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "none";
+    titulo.style.transition = "0.1s";
+  })
+}
+
+var boton = document.getElementById("boton_navbar");
+var menusito = document.getElementById("navbar_mobilito"); 
+var seccion = document.getElementById("seccion");
+var checkin = document.getElementById("check");
+checkin.checked = true;
+
+
+function desplegaMenu(){
+    menusito.style.display = "flex";
+}
+
+function escondeMenu(){
+    if(checkin.checked == true)
+    menusito.style.display = "none";
+}
+
+boton.addEventListener("click", desplegaMenu);
+boton.addEventListener("click", escondeMenu);
+
+        var circulo = document.getElementById("circulito");
+var botonDescarga = document.getElementsByClassName("boton_descargaCV");
+
+function subeCirculo(){
+circulo.style.transform = "translateY(0px)";
+}
+
+function bajaCirculo(){
+circulo.style.transform = "translateY(200px)";
+}
+
+botonDescarga[0].addEventListener("mouseenter", subeCirculo);
+botonDescarga[0].addEventListener("mouseleave", bajaCirculo);
+
     </script>
 </body>
 </html>

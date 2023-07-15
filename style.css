@@ -1,6 +1,4 @@
-:root{
-    --maximoancho: 1000px;
-}
+
 @font-face {
     font-family: Athenian;
     src: url('./Athenian.ttf') format('truetype');
@@ -11,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 
@@ -593,11 +590,74 @@ h2{
 
 .about_texto{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width: 60%;
     height: 100%;
+    font-family: 'Telex', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.about_texto button{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 120px;
+    height: 40px;
+    font-family: 'Telex', sans-serif;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 1s ease;
+}
+
+.about_texto button:hover{
+    transform: scale(1.05);
+}
+
+
+.boton_descargaCV{
+    position: relative;
+    z-index: 0;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.circulo_boton{
+    position: absolute;
+    transition: transform 2s ease;
+    z-index: -1;
+}
+
+.about_texto h3{
+    width: 100%;
+}
+
+h3::first-letter{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+.about_texto ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.about_texto li{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.anios_cv{
+    color: rgba(0, 0, 0, 0.479);
 }
 
 .contacto_container{
@@ -837,23 +897,12 @@ label{
 }
 
 
-.diseno_container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 12px;
-    gap: 8px;
-}
-
 
 .diseno_diseno{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
 }
 
 
@@ -881,6 +930,7 @@ label{
 .diseno_articulo_container{
     scroll-behavior: smooth;
     overflow-x: scroll;
+    overflow-y: scroll;
     width: 100%;
     max-width: 1600px;
     display: flex;
@@ -962,10 +1012,6 @@ label{
     height: 50px;
 }
 
-.boton_izquierda:hover{
-    background-color: purple;
-}
-
 .boton_derecha {
     opacity: 0;
     border: none;
@@ -979,6 +1025,9 @@ label{
     height: 50px;
 }
 
+.diseno_articulo:hover{
+    transform:translateY(1px);
+}
 
 @media screen and (max-width: 780px){
 
@@ -1191,6 +1240,9 @@ label{
         width: 80% !important;
     }
     
+    .boton_izquierda, .boton_derecha{
+        display: none;
+    }
 }
 
 
