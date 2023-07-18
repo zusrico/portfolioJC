@@ -103,5 +103,18 @@ contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
 
 botoncito.addEventListener("mouseover", oscurecer);
 
+
+function enviarCorreo() {
+  var destinatario = document.getElementById("destinatario").value;
+  var nombre = document.getElementById("nombre").value;
+  var nombre = document.getElementById("apellido").value;
+  var contenido = document.getElementById("contenido").value;
+
+  var link = "mailto:" + destinatario +
+             "?subject=" + encodeURIComponent(asunto) +
+             "&body=" + encodeURIComponent(contenido);
+
+  window.location.href = link;
+}
   
 
