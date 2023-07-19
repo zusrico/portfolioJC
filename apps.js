@@ -52,8 +52,6 @@ function escondeMenu(){
 boton.addEventListener("click", desplegaMenu);
 boton.addEventListener("click", escondeMenu);
 
-
-
 var botoncito = document.getElementById("botoncitoguapo");
 var botoncito_dos = document.getElementById("botoncitoguapo_dos");
 var contenedor_tarjetas_diseno = document.getElementById("diseno_articulo_contenedor");
@@ -63,7 +61,7 @@ function oscurecer(){
 }
 
 function apareceBoton(){
-  
+
   botoncito.style.border = "none";
   botoncito.style.backgroundColor = "white";
   botoncito.style.opacity = "0.85";
@@ -73,6 +71,7 @@ function apareceBoton(){
   botoncito_dos.style.backgroundColor = "white";
   botoncito_dos.style.opacity = "0.85";
   botoncito_dos.style.boxShadow = "1px 1px 10px grey";
+
 }
 
 function desapareceBoton(){
@@ -104,17 +103,21 @@ contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
 botoncito.addEventListener("mouseover", oscurecer);
 
 
-function enviarCorreo() {
-  var destinatario = document.getElementById("destinatario").value;
-  var nombre = document.getElementById("nombre").value;
-  var nombre = document.getElementById("apellido").value;
-  var contenido = document.getElementById("contenido").value;
+function enviarFormulario() {
 
-  var link = "mailto:" + destinatario +
-             "?subject=" + encodeURIComponent(asunto) +
-             "&body=" + encodeURIComponent(contenido);
+  var informacionCorreo = [];
 
-  window.location.href = link;
-}
+  const name = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("comentario").value;
+
+  informacionCorreo.push(name);
+  informacionCorreo.push(email);
+  informacionCorreo.push(message);
+
+  console.log("Nombre: " + informacionCorreo[0]);
+  console.log("Correo electrónico: " + informacionCorreo[1]);
+  console.log("Mensaje: " + informacionCorreo[2]);
   
-
+  document.getElementById("contactForm").reset();
+}

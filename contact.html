@@ -73,40 +73,40 @@
                 <div class="contacto_columna main_contacto">
                     <div><p>Aquí es pa pedir lo que quieras de trabajo o comentar lo que te de la gana o aportar alguna idea.</p></div>
                     <div class="formulario" style="margin-top: 50px;">
-                        <form>
+                        <form id="contactForm">
                             <fieldset class="nombre_apell_container">
                                 <legend style="margin-bottom: 14px;">Datos personales</legend>
                                 <div class="nombre_apell">
                                     <div style="width: 50%;">
                                         <label for="nombre">Nombre<span style="color: red;">*</span></label>
-                                        <input type="text" id="nombre" name="name" required style="width: 100%;">
+                                        <input type="text" id="nombre" name="nombre" required style="width: 100%;">
                                     </div>
                                     <div style="width: 50%;">
                                         <label for="apellido">Apellidos<span style="color: red;">*</span></label>
-                                        <input type="text" id="apellido" name="name" style="width: 100%;">
+                                        <input type="text" id="apellido" name="apellido" style="width: 100%;">
                                     </div>
                                 </div>
                             </fieldset>
                             <div class="nombre_apell">
                                 <div class="elemento_form">
                                     <label for="email">email <span style="color: red;">*</span></label>
-                                    <input type="text" id="email" name="name" required>
+                                    <input type="email" id="email" name="email" required>
                                 </div>
                             </div>
                             <div class="nombre_apell">
                                 <div class="elemento_form">
-                                    <label for="nombre">otro campo</label>
-                                    <input type="text" id="nombre" name="name">
+                                    <label for="otro_campo">otro campo</label>
+                                    <input type="text" id="otro_campo" name="otro_campo">
                                 </div>
                             </div>
                             <div class="nombre_apell">
                                 <div class="elemento_form">
                                     <label for="comentario">Comentario</label>
-                                    <textarea style="min-width: 100%; max-width: 100%;" id="comentario"></textarea>
+                                    <textarea style="min-width: 100%; max-width: 100%;" id="comentario" name="comentario"></textarea>
                                 </div>
                             </div>
                             <div class="botoncito_container">
-                                <input type="submit" class="container" value="ENVIAR MENSAJE" onclick="enviarCorreo()">
+                                <input type="button" class="container" value="ENVIAR MENSAJE" onclick="enviarFormulario()">
                             </div>
                         </form>
                     </div>
