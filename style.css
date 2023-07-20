@@ -771,17 +771,17 @@ fieldset{
     margin-top: -30px;
 }
 
-.botoncito_container input{
+.botoncito_container button{
     cursor: pointer;
     padding: 17px;
     background-color: black;
     color: white;
     font-family: 'Telex', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
-.botoncito_container input:hover{
+.botoncito_container button:hover{
     opacity: 0.5;
 }
 
