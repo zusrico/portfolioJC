@@ -109,15 +109,18 @@ function enviarFormulario() {
 
   const name = document.getElementById("nombre").value;
   const email = document.getElementById("email").value;
+  const asunto = document.getElementById("asunto").value;
   const message = document.getElementById("comentario").value;
 
   informacionCorreo.push(name);
   informacionCorreo.push(email);
+  informacionCorreo.push(asunto);
   informacionCorreo.push(message);
 
   console.log("Nombre: " + informacionCorreo[0]);
   console.log("Correo electrónico: " + informacionCorreo[1]);
-  console.log("Mensaje: " + informacionCorreo[2]);
+  console.log("Asunto: " + informacionCorreo[2]);
+  console.log("Mensaje: " + informacionCorreo[3]);
   
   document.getElementById("contactForm").reset();
 }
