@@ -41,12 +41,12 @@ checkin.checked = true;
 
 
 function desplegaMenu(){
-    menusito.style.display = "flex";
+    menusito.style.transform = "translateY(0px)";
 }
 
 function escondeMenu(){
     if(checkin.checked == true)
-    menusito.style.display = "none";
+    menusito.style.transform = "translateY(-330px)";
 }
 
 boton.addEventListener("click", desplegaMenu);
