@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: Athenian;
     src: url('./Athenian.ttf') format('truetype');
@@ -43,15 +42,6 @@ body{
     background-color: var(--color_gris);
 }
 
-
-
-.icono_tope_pagina{
-    width: 100%;
-    transform: translateY(-90px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .navbar_container{
     display: flex;
@@ -1043,9 +1033,9 @@ label{
     transform:translateY(1px);
 }
 
+
+
 @media screen and (max-width: 780px){
-
-
 
     .diseno_diseno{
         display: flex;
@@ -1077,10 +1067,6 @@ label{
 
     header{
         height: 80px;
-    }
-
-    .icono_tope_pagina{
-        display: none;
     }
 
     .navbar_container{
@@ -1159,12 +1145,6 @@ label{
     } 
 
     
-
-    .icono_tope_pagina{
-        transform: translateY(40px) scale(0.85);
-
-    }
-    
     .estrella_azul_menu{
         display: none;
     }
@@ -1175,6 +1155,10 @@ label{
     }
 
     .azulejo{
+        display: none;
+    }
+
+    .azulejito{
         display: none;
     }
 

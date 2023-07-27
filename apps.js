@@ -6,7 +6,6 @@ var tarjeta_texto = document.getElementById("fotito");
 var tarjeta_trabajo_diseno = document.getElementsByClassName("tarjeta_trabajo_diseno");
 var tarjeta_diseno = document.getElementsByClassName("tarjeta_diseno");
 
-
 for (let j = 0; j<tarjeta_diseno.length; j++){
   tarjeta_trabajo_diseno[j].addEventListener("mouseenter", infoDisenoAparece);
   tarjeta_trabajo_diseno[j].addEventListener("mouseleave", infoDisenoDesaparece);
@@ -16,7 +15,6 @@ for (let j = 0; j<tarjeta_diseno.length; j++){
 var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
 
 var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
-
 
 for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
   tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
@@ -44,6 +42,7 @@ function desplegaMenu(){
     menusito.style.transform = "translateY(0px)";
 }
 
+
 function escondeMenu(){
     if(checkin.checked == true)
     menusito.style.transform = "translateY(-330px)";
@@ -51,57 +50,6 @@ function escondeMenu(){
 
 boton.addEventListener("click", desplegaMenu);
 boton.addEventListener("click", escondeMenu);
-
-var botoncito = document.getElementById("botoncitoguapo");
-var botoncito_dos = document.getElementById("botoncitoguapo_dos");
-var contenedor_tarjetas_diseno = document.getElementById("diseno_articulo_contenedor");
-
-function oscurecer(){
-  botoncito.style.opacity = "0.75";
-}
-
-function apareceBoton(){
-
-  botoncito.style.border = "none";
-  botoncito.style.backgroundColor = "white";
-  botoncito.style.opacity = "0.85";
-  botoncito.style.boxShadow = "1px 1px 10px grey";
-  
-  botoncito_dos.style.border = "none";
-  botoncito_dos.style.backgroundColor = "white";
-  botoncito_dos.style.opacity = "0.85";
-  botoncito_dos.style.boxShadow = "1px 1px 10px grey";
-
-}
-
-function desapareceBoton(){
-  botoncito.style.opacity = "0";
-  botoncito_dos.style.opacity = "0";
-}
-
-function desplazaPago(){
-  contenedor_tarjetas_diseno.scrollLeft -= 530;
-}
-
-function desplazaPagoDos(){
-  contenedor_tarjetas_diseno.scrollLeft += 530;
-}
-
-var tarjetota = document.getElementsByClassName("diseno_articulo");
-
-
-botoncito.addEventListener("click", desplazaPago);
-botoncito_dos.addEventListener("click", desplazaPagoDos);
-
-contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
-contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
-
-
-contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
-contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
-
-botoncito.addEventListener("mouseover", oscurecer);
-
 
 function enviarFormulario() {
 
@@ -117,10 +65,6 @@ function enviarFormulario() {
   informacionCorreo.push(asunto);
   informacionCorreo.push(message);
 
-  console.log("Nombre: " + informacionCorreo[0]);
-  console.log("Correo electrónico: " + informacionCorreo[1]);
-  console.log("Asunto: " + informacionCorreo[2]);
-  console.log("Mensaje: " + informacionCorreo[3]);
   
   document.getElementById("contactForm").reset();
 }

@@ -22,17 +22,12 @@
 </head>
 <body>
     <header>
-        <div class="icono_tope_pagina">
-            <div>
-                <a href="./index.html"><img class="logito" style="width: 80px;" src="./images/Captura de pantalla 2023-06-01 194144.png"></a>    
-            </div>
-        </div>
         <div class="navbar_container"><div class="navbar">
                 <ul>
                     <li><a href="./index.html">inicio</a></li>
                     <li><a class="current" href="./diseno.html">diseño</a></li>
                     <li><a href="./brand.html">marca</a></li>
-                    <li class="iconitorojito"><a href="./index.html"><img class="logito" style="width: 80px;" src="./images/Captura de pantalla 2023-06-01 194144.png"></a></li>
+                    <li class="iconitorojito"><a href="./index.html"><img class="logito" style="width: 80px;" src="./images/estrellas_colores/estrella_roja.png"></a></li>
                     <li><a href="./photo.html">foto</a></li>
                     <li><a href="./about.html">sobre mí</a></li>
                     <li><a href="./contact.html">contacto</a></li>
@@ -52,7 +47,7 @@
                 </div>
                 <div>
                     <a href="./index.html">
-                    <img class="logito" style="width: 50px;" src="./images/Captura de pantalla 2023-06-01 194144.png">
+                    <img class="logito" style="width: 50px;" src="./images/estrellas_colores/estrella_roja.png">
                     </a>
                 </div>
             </div>
@@ -173,7 +168,7 @@
                 </article>
             </section>
     </main>
-    <footer>
+    <footer style="margin-top: 50px;">
         <div class="final_container" id="contacto">
             <div class="final">
                 <p style="font-size: 14px;">&copy; 2023 Jartible. Todos los derechos reservados.</p>
@@ -190,6 +185,109 @@
             </div>
         </div>
     </footer>
-    <script src="./apps.js"></script>
+    <script>
+        var botoncito = document.getElementById("botoncitoguapo");
+var botoncito_dos = document.getElementById("botoncitoguapo_dos");
+var contenedor_tarjetas_diseno = document.getElementById("diseno_articulo_contenedor");
+
+function oscurecer(){
+  botoncito.style.opacity = "0.75";
+}
+
+function apareceBoton(){
+
+  botoncito.style.border = "none";
+  botoncito.style.backgroundColor = "white";
+  botoncito.style.opacity = "0.85";
+  botoncito.style.boxShadow = "1px 1px 10px grey";
+  
+  botoncito_dos.style.border = "none";
+  botoncito_dos.style.backgroundColor = "white";
+  botoncito_dos.style.opacity = "0.85";
+  botoncito_dos.style.boxShadow = "1px 1px 10px grey";
+
+}
+
+function desapareceBoton(){
+  botoncito.style.opacity = "0";
+  botoncito_dos.style.opacity = "0";
+}
+
+function desplazaPago(){
+  contenedor_tarjetas_diseno.scrollLeft -= 530;
+}
+
+function desplazaPagoDos(){
+  contenedor_tarjetas_diseno.scrollLeft += 530;
+}
+
+var tarjetota = document.getElementsByClassName("diseno_articulo");
+
+
+botoncito.addEventListener("click", desplazaPago);
+botoncito_dos.addEventListener("click", desplazaPagoDos);
+
+contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
+contenedor_tarjetas_diseno.addEventListener("mouseover", apareceBoton);
+
+
+contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
+contenedor_tarjetas_diseno.addEventListener("mouseout", desapareceBoton);
+
+botoncito.addEventListener("mouseover", oscurecer);
+
+
+
+var imagen_primera = document.getElementsByClassName("lazyto");
+var tarjeta_texto = document.getElementById("fotito");
+
+var tarjeta_trabajo_diseno = document.getElementsByClassName("tarjeta_trabajo_diseno");
+var tarjeta_diseno = document.getElementsByClassName("tarjeta_diseno");
+
+for (let j = 0; j<tarjeta_diseno.length; j++){
+  tarjeta_trabajo_diseno[j].addEventListener("mouseenter", infoDisenoAparece);
+  tarjeta_trabajo_diseno[j].addEventListener("mouseleave", infoDisenoDesaparece);
+}
+
+
+var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
+
+var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
+
+for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
+  tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "underline";
+    titulo.style.textDecorationColor = "red";
+    titulo.style.transition = "0.1s";
+  })
+
+  tarjeta_diseno_proyecto[t].addEventListener("mouseleave", function(numero){
+    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
+    titulo.style.textDecoration = "none";
+    titulo.style.transition = "0.1s";
+  })
+}
+
+var boton = document.getElementById("boton_navbar");
+var menusito = document.getElementById("navbar_mobilito"); 
+var seccion = document.getElementById("seccion");
+var checkin = document.getElementById("check");
+checkin.checked = true;
+
+
+function desplegaMenu(){
+    menusito.style.transform = "translateY(0px)";
+}
+
+function escondeMenu(){
+    if(checkin.checked == true)
+    menusito.style.transform = "translateY(-330px)";
+}
+
+boton.addEventListener("click", desplegaMenu);
+boton.addEventListener("click", escondeMenu);
+
+    </script>
 </body>
 </html>
