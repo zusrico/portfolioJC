@@ -130,6 +130,7 @@ input[type="checkbox"]{
 }
 
 .navbar_mobile_container{
+    transform: translateY(-330px);
     background-color: white;
     position: absolute;
     width: 100%;
@@ -918,6 +919,12 @@ label{
     text-decoration-color: red;
 }
 
+.diseno_articulo_container a{
+    font-weight: bold;
+    color: red; 
+    font-size: 12px;
+}
+
 .descripcion_proyecto_diseno{
     color: rgba(0, 0, 0, 0.856);
 }
@@ -1036,12 +1043,18 @@ label{
 
 @media screen and (max-width: 780px){
 
+    .disenios_contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .diseno_diseno{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 95%;
     }
 
     .diseno_articulo_container{

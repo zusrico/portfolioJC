@@ -1,5 +1,3 @@
-
-
 var imagen_primera = document.getElementsByClassName("lazyto");
 var tarjeta_texto = document.getElementById("fotito");
 
@@ -42,7 +40,7 @@ function desplegaMenu(){
     menusito.style.transform = "translateY(0px)";
 }
 
-
+                                     
 function escondeMenu(){
     if(checkin.checked == true)
     menusito.style.transform = "translateY(-330px)";
