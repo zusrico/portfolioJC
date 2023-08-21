@@ -468,9 +468,9 @@ h2{
     opacity: 0;
     background: rgba(119, 0, 255, 0.74);
     margin: 1px;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
-    animation: aparece_foto 2s forwards;
+    animation: aparece_foto 1s forwards;
 }
 
 
