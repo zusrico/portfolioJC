@@ -920,7 +920,7 @@ label{
     display: block;
     font-weight: bold;
     font-size: 22px;
-    text-decoration-color: red;
+    text-decoration-color: rgb(94, 9, 9);
 }
 
 .diseno_articulo_container a{
@@ -937,10 +937,6 @@ label{
     color: rgba(0, 0, 0, 0.856);
 }
 
-.underline_proyecto_diseno{
-    text-decoration: underline; 
-    text-decoration-color: red;
-}
 
 .diseno_container article{
     height: 100%;
@@ -1053,7 +1049,7 @@ label{
 
 
 @media screen and (max-width: 900px){
-    .azulejos_container div:nth-child(4), .azulejos_container div:nth-child(6){
+    .azulejos_container div:nth-child(4){
         display: none;
     }
 }

@@ -78,10 +78,10 @@
                     <div class="about_texto">
                         <h3><strong>Educación</strong></h3>
                         <ul>
-                            <li><span class="anios_cv">2023</span> Grado Publicidad y Relaciones Públicas</li>
-                            <li><span class="anios_cv">2019</span> Grado Superior blablabla</li>
-                            <li><span class="anios_cv">2017</span> Grado Medio blabla</li>
-                            <li><span class="anios_cv">2016</span> Grado Medio blabla</li>
+                            <li><span class="anios_cv">2018-2022</span> Grado Publicidad y Relaciones Públicas</li>
+                            <li><span class="anios_cv">2015-2017</span> Grado Superior: Iluminación, Captación y Tratamiento de la Imagen</li>
+                            <li><span class="anios_cv">2013-2015</span> Grado Medio: Sistemas Microinformáticos y Redes</li>
+                            <li><span class="anios_cv">2011-2013</span> Grado Medio: Instalaciones eléctricas de interior y automatizaciones</li>
                         </ul>
                     </div>
                 </div>
@@ -89,10 +89,10 @@
                     <div class="about_texto">
                         <h3>Experiencia Laboral <strong>Diseño Gráfico</strong></h3>
                         <ul>
-                            <li><span class="anios_cv">2019-Act.</span> Empresa de mickey mouse</li>
-                            <li><span class="anios_cv">2020-Act.</span> Fundador y diseñador de Jartible&copy;</li>
-                            <li><span class="anios_cv">2018-2019</span> Costa Noroeste</li>
-                            <li><span class="anios_cv">2016-Act.</span> Diseñador freelance</li>
+                            <li><span class="anios_cv">2022-2023</span> Trabajo autónomo</li>
+                            <li><span class="anios_cv">2021-2023</span> Tritón Live Fun</li>
+                            <li><span class="anios_cv">2017-2021</span> MADOS Copas</li>
+                            <li><span class="anios_cv">2014-2017</span> CREAKTIVA</li>
                         </ul>
                     </div>
                     <div class="about_imagen imagen_dos">
@@ -106,18 +106,20 @@
                     <div class="about_texto">
                         <h3>Experiencia Laboral <strong>Fotografía</strong></h3>
                         <ul>
-                            <li><span class="anios_cv">2018-Act.</span> Primavera Trompetera</li>
-                            <li><span class="anios_cv">2020-Act.</span> Fundador y diseñador de Jartible&copy;</li>
-                            <li><span class="anios_cv">2018-2019</span> Costa Noroeste</li>
-                            <li><span class="anios_cv">2016-Act.</span> Diseñador freelance</li>
+                            <li><span class="anios_cv">2022-2023</span> Primavera Trompetera</li>
+                            <li><span class="anios_cv">2022</span> Sierra Sur 2022 Edición Mayo | Sierra Sur Edición Octubre</li>
+                            <li><span class="anios_cv">2022</span> Brota Música 2022</li>
+                            <li><span class="anios_cv">2021</span> Sierra Sur</li>
+                            <li><span class="anios_cv">2021</span> Rota es Música (30 Fechas)</li>
+                            <li><span class="anios_cv">2019-2022</span> Navirap Jerez</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about_item_container container_dos" style="background-color: white;">
                     <div class="about_texto">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam neque quisquam vero repellendus, doloribus, id officiis dolore doloremque aut dolores iure voluptas cupiditate natus tempora, ducimus a saepe expedita inventore!</p>
-                        <a href="./cv/CV_GarciaSanchezJesus.pdf" download="">
-                            <button type="button" class="boton_descargaCV">Descargar<span class="material-symbols-outlined">
+                        <p>Además de toda la experiencia mencionada en los apartados anteriores también he trabajado en distintas empresas realizando labores de informática, limpieza, administración, <i>Community Manager</i> entre otras. Toda esta información queda ampliada en el CV adjunto:</p>
+                        <a href="./cv/CV_GarciaSanchezJoseCarlos.pdf" download="">
+                            <button type="button" class="boton_descargaCV">Descargar CV<span class="material-symbols-outlined">
                                 download
                                 </span> 
                                 <svg class="circulo_boton" id="circulito" xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="transform: translateY(200px);">
@@ -161,27 +163,6 @@
         for (let j = 0; j<tarjeta_diseno.length; j++){
         tarjeta_trabajo_diseno[j].addEventListener("mouseenter", infoDisenoAparece);
         tarjeta_trabajo_diseno[j].addEventListener("mouseleave", infoDisenoDesaparece);
-        }
-
-
-        var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
-
-        var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
-
-
-        for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
-        tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
-            var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
-            titulo.style.textDecoration = "underline";
-            titulo.style.textDecorationColor = "red";
-            titulo.style.transition = "0.1s";
-        })
-
-        tarjeta_diseno_proyecto[t].addEventListener("mouseleave", function(numero){
-            var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
-            titulo.style.textDecoration = "none";
-            titulo.style.transition = "0.1s";
-        })
         }
 
         var boton = document.getElementById("boton_navbar");

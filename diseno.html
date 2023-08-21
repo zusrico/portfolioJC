@@ -79,7 +79,7 @@
                         </span></button>
                         <div class="diseno_articulo" style="position: relative;">
                             <img src="./images/disenio/CARTEL_FINAL.png" class="diseno_articulo_image">
-                            <p class="nombre_proyecto_diseno"><span class="underline_proyecto_diseno">Primavera</span> Trompetera Festival</p>
+                            <p class="nombre_proyecto_diseno">Primavera Trompetera Festival</p>
                             <p class="descripcion_proyecto_diseno">Cartel diseñado para el famoso evento <strong>Primavera Trompetera</strong> 2023 que se celebró en Jerez con artistas del panorama nacional. La variedad de colores van de la mano de la reconocible mascota del festival.</p>
                         </div>
                         <div class="diseno_articulo_doble">
@@ -248,22 +248,6 @@ for (let j = 0; j<tarjeta_diseno.length; j++){
 
 var tarjeta_diseno_proyecto = document.getElementsByClassName("diseno_articulo");
 
-var titulo = document.getElementsByClassName("nombre_proyecto_diseno");
-
-for (let t = 0; t<tarjeta_diseno_proyecto.length; t++) {
-  tarjeta_diseno_proyecto[t].addEventListener("mouseenter", function(numero){
-    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
-    titulo.style.textDecoration = "underline";
-    titulo.style.textDecorationColor = "red";
-    titulo.style.transition = "0.1s";
-  })
-
-  tarjeta_diseno_proyecto[t].addEventListener("mouseleave", function(numero){
-    var titulo = this.getElementsByClassName("nombre_proyecto_diseno")[0];
-    titulo.style.textDecoration = "none";
-    titulo.style.transition = "0.1s";
-  })
-}
 
 var boton = document.getElementById("boton_navbar");
 var menusito = document.getElementById("navbar_mobilito"); 
