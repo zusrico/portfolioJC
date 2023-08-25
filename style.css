@@ -317,7 +317,6 @@ h2{
 }
 
 
-
 .fotos_container_collage{
     display: flex;
     width: 100%;
@@ -471,6 +470,13 @@ h2{
     background-size:cover;
     background-position: center;
     animation: aparece_foto 1s forwards;
+    object-fit: cover;
+}
+
+.tarjeta_trabajo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

@@ -52,67 +52,70 @@
         </div>
     </header>
     <main>
-        <div class="navbar_mobile_container" id="navbar_mobilito">
-            <div class="navbar_mobile">
-                <ul class="navbar_mobile_menu">
-                    <li><a href="./index.html">inicio</a></li>
-                    <li><a href="./diseno.html">diseño</a></li>
-                    <li><a href="./brand.html">marca</a></li>
-                    <li><a href="./photo.html">foto</a></li>
-                    <li><a href="./about.html">sobre mí</a></li>
-                    <li class="active" ><a href="./contact.html">contacto</a></li>
-                </ul>
+        <aside>
+            <div class="navbar_mobile_container" id="navbar_mobilito">
+                <div class="navbar_mobile">
+                    <ul class="navbar_mobile_menu">
+                        <li><a href="./index.html">inicio</a></li>
+                        <li><a href="./diseno.html">diseño</a></li>
+                        <li><a href="./brand.html">marca</a></li>
+                        <li><a href="./photo.html">foto</a></li>
+                        <li><a href="./about.html">sobre mí</a></li>
+                        <li class="active" ><a href="./contact.html">contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </aside>
 
-        <div class="contacto_container"> 
-            <div class="contacto_contacto">
-                <div class="contacto_columna main_contacto">
-                    <div><p>Aquí es pa pedir lo que quieras de trabajo o comentar lo que te de la gana o aportar alguna idea.</p></div>
-                    <div class="formulario" style="margin-top: 50px;">
-                        <form id="contactForm" action="https://formsubmit.co/contacto@jcreativevibes.com" method="POST" >
-                            <fieldset class="nombre_apell_container">
-                                <legend style="margin-bottom: 14px;">Datos personales</legend>
+        <article>
+            <div class="contacto_container"> 
+                <div class="contacto_contacto">
+                    <div class="contacto_columna main_contacto">
+                        <div><p>Aquí es pa pedir lo que quieras de trabajo o comentar lo que te de la gana o aportar alguna idea.</p></div>
+                        <div class="formulario" style="margin-top: 50px;">
+                            <form id="contactForm" action="https://formsubmit.co/contacto@jcreativevibes.com" method="POST" >
+                                <fieldset class="nombre_apell_container">
+                                    <legend style="margin-bottom: 14px;">Datos personales</legend>
+                                    <div class="nombre_apell">
+                                        <div style="width: 50%;">
+                                            <label for="nombre">Nombre<span style="color: red;">*</span></label>
+                                            <input type="text" id="nombre" name="nombre" required style="width: 100%;">
+                                        </div>
+                                        <div style="width: 50%;">
+                                            <label for="apellido">Apellidos<span style="color: red;">*</span></label>
+                                            <input type="text" id="apellido" name="apellido" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </fieldset>
                                 <div class="nombre_apell">
-                                    <div style="width: 50%;">
-                                        <label for="nombre">Nombre<span style="color: red;">*</span></label>
-                                        <input type="text" id="nombre" name="nombre" required style="width: 100%;">
-                                    </div>
-                                    <div style="width: 50%;">
-                                        <label for="apellido">Apellidos<span style="color: red;">*</span></label>
-                                        <input type="text" id="apellido" name="apellido" style="width: 100%;">
+                                    <div class="elemento_form">
+                                        <label for="email">email <span style="color: red;">*</span></label>
+                                        <input type="email" id="email" name="email" required>
                                     </div>
                                 </div>
-                            </fieldset>
-                            <div class="nombre_apell">
-                                <div class="elemento_form">
-                                    <label for="email">email <span style="color: red;">*</span></label>
-                                    <input type="email" id="email" name="email" required>
+                                <div class="nombre_apell">
+                                    <div class="elemento_form">
+                                        <label for="asunto">Asunto</label>
+                                        <input type="text" id="asunto" name="asunto">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="nombre_apell">
-                                <div class="elemento_form">
-                                    <label for="asunto">Asunto</label>
-                                    <input type="text" id="asunto" name="asunto">
+                                <div class="nombre_apell">
+                                    <div class="elemento_form">
+                                        <label for="comentario">Comentario</label>
+                                        <textarea style="min-width: 100%; max-width: 100%;" id="comentario" name="comentario"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="nombre_apell">
-                                <div class="elemento_form">
-                                    <label for="comentario">Comentario</label>
-                                    <textarea style="min-width: 100%; max-width: 100%;" id="comentario" name="comentario"></textarea>
+                                <div class="botoncito_container">
+                                    <button type="submit">Enviar Mensaje</button>
                                 </div>
-                            </div>
-                            <div class="botoncito_container">
-                                <button type="submit">Enviar Mensaje</button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </main>
     <footer>
-        
         <div class="final_container" id="contacto">
             <div class="final">
                 <p style="font-size: 14px;">&copy; 2023 Jartible. Todos los derechos reservados.</p>
